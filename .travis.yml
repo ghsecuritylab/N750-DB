@@ -8,6 +8,6 @@ git:
 depth: 1
 
 script:
-cd toolchain-mipsel
+cd ./toolchain-mipsel
 sudo ./clean_sources
 sudo ./build_toolchain
