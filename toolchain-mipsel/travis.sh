@@ -29,8 +29,8 @@ PING_LOOP_PID=$!
 # your_build_command_1 >> $BUILD_OUTPUT 2>&1
 #sudo bash clean_sources &> $BUILD_OUTPUT
 #sudo bash build_toolchain &> $BUILD_OUTPUT
-sudo bash clear_tree &> $BUILD_OUTPUT
-cd ../trunk && sudo bash build_firmware &> $BUILD_OUTPUT
+cd ../trunk && sudo bash clear_tree &> $BUILD_OUTPUT
+sudo bash build_firmware &> $BUILD_OUTPUT
 
 # The build finished without returning an error so dump a tail of the output
 dump_output
