@@ -27,8 +27,8 @@ PING_LOOP_PID=$!
 
 # My build is using maven, but you could build anything with this, E.g.
 # your_build_command_1 >> $BUILD_OUTPUT 2>&1
-#sudo bash clean_sources &> $BUILD_OUTPUT
-#sudo bash build_toolchain &> $BUILD_OUTPUT
+sudo bash clean_sources &> $BUILD_OUTPUT
+sudo bash build_toolchain &> $BUILD_OUTPUT
 cd ../trunk && sudo bash clear_tree &> $BUILD_OUTPUT
 sudo bash build_firmware &> $BUILD_OUTPUT
 
