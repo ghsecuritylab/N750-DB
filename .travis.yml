@@ -9,5 +9,6 @@ git:
 
 script:
  - cd ./toolchain-mipsel
- - sudo bash clean_sources
- - sudo bash build_toolchain
+ - sudo bash travis.sh
+   # - sudo bash clean_sources
+   # - sudo bash build_toolchain
