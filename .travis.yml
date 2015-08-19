@@ -5,9 +5,9 @@ before_install:
 - sudo apt-get install -y --force-yes build-essential gawk pkg-config gettext automake autoconf libtool bison flex zlib1g-dev libgmp3-dev libmpfr-dev libmpc-dev texinfo mc
 
 git:
-depth: 1
+  depth: 1
 
 script:
-cd ./toolchain-mipsel
-sudo ./clean_sources
-sudo ./build_toolchain
+ - cd ./toolchain-mipsel
+ - sudo bash clean_sources
+ - sudo bash build_toolchain
